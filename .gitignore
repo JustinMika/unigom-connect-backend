@@ -1,11 +1,6 @@
-# Dependencies
-/node_modules
-
-# Production
-/dist
-
-# Logs
-/logs
-
-# Env files
+uploads/
+logs/
 .env
+node_modules/
+dist/
+logs/*.logs

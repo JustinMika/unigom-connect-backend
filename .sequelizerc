@@ -1,0 +1,21 @@
+const path = require('path');
+
+// Configuration pour ts-node
+require('ts-node').register({
+	compilerOptions: {
+		module: 'commonjs',
+		target: 'es2020',
+		esModuleInterop: true,
+		allowSyntheticDefaultImports: true,
+		strict: true,
+		skipLibCheck: true,
+		forceConsistentCasingInFileNames: true,
+	},
+});
+
+module.exports = {
+	'config': path.resolve('src/config', 'sequelize-cli-config.js'),
+	'models-path': path.resolve('src/models'),
+	'seeders-path': path.resolve('src/seeders'),
+	'migrations-path': path.resolve('src/migrations')
+};
